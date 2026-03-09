@@ -1,108 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<title>Финал квеста</title>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Финал квеста</title>
 
-<style>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(135deg, #ff7aa2, #ffc3d6, #ffe6ef);
+                background-size: 400% 400%;
+                animation: bgmove 10s infinite alternate;
+            }
 
-body{
-margin:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#ff7aa2,#ffc3d6,#ffe6ef);
-background-size:400% 400%;
-animation:bgmove 10s infinite alternate;
-}
+            @keyframes bgmove {
+                0% {
+                    background-position: left;
+                }
+                100% {
+                    background-position: right;
+                }
+            }
 
-@keyframes bgmove{
-0%{background-position:left;}
-100%{background-position:right;}
-}
+            .card {
+                background: white;
+                padding: 50px;
+                border-radius: 25px;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                max-width: 520px;
+            }
 
-.card{
-background:white;
-padding:50px;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,0.2);
-text-align:center;
-max-width:500px;
-}
+            h1 {
+                font-size: 38px;
+                margin-bottom: 10px;
+                color: #333;
+            }
 
-h1{
-font-size:38px;
-margin-bottom:10px;
-}
+            p {
+                font-size: 18px;
+                color: #555;
+            }
 
-p{
-font-size:18px;
-color:#555;
-}
+            video {
+                margin-top: 20px;
+                border-radius: 15px;
+                width: 100%;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            }
 
-.room{
-margin-top:25px;
-font-size:70px;
-font-weight:bold;
-color:#ff3f83;
-animation:pulse 1.5s infinite;
-}
+            .room {
+                margin-top: 25px;
+                font-size: 70px;
+                font-weight: bold;
+                color: #ff3f83;
+                animation: pulse 1.5s infinite;
+            }
 
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.1);}
-100%{transform:scale(1);}
-}
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
 
-.emoji{
-font-size:40px;
-margin-bottom:15px;
-}
+            .emoji {
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
 
-</style>
-</head>
+    <body>
+        <div class="card">
+            <div class="emoji">🌸🎉🌸</div>
 
-<body>
+            <h1>Вы прошли квест!</h1>
 
-<div class="card">
+            <p>Поздравляем. Вы справились со всеми испытаниями.</p>
 
-<div class="emoji">🌸🎉🌸</div>
+            <p>Последняя подсказка привела вас сюда.</p>
 
-<h1>Вы прошли квест!</h1>
+            <video controls>
+                <source src="video.mp4" type="video/mp4" />
+            </video>
 
-<p>
-<<<<<<< HEAD
-Поздравляем.
-=======
-Поздравляем.  
->>>>>>> dc782a028ee1df5bddc6c7f782fed06af3ff8fa9
-Вы справились со всеми испытаниями.
-</p>
+            <p>Финальная точка:</p>
 
-<p>
-Последняя подсказка привела вас сюда.
-</p>
+            <div class="room">316</div>
 
-<<<<<<< HEAD
-<video width="100%" controls>
-    <source src="video.mp4" type="video/mp4">
-</video>
-
-=======
->>>>>>> dc782a028ee1df5bddc6c7f782fed06af3ff8fa9
-<p>Финальная точка:</p>
-
-<div class="room">316</div>
-
-<p>Идите в этот кабинет. Там вас ждёт сюрприз.</p>
-
-</div>
-
-</body>
-<<<<<<< HEAD
+            <p>Идите в этот кабинет. Там вас ждёт сюрприз.</p>
+        </div>
+    </body>
 </html>
-=======
-</html>
->>>>>>> dc782a028ee1df5bddc6c7f782fed06af3ff8fa9
